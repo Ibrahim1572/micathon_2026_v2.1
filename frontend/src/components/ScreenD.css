@@ -1,0 +1,314 @@
+/* ─────────────────────────────────────────────────────────────────
+   ScreenD (Smart Plan) — Component-scoped styles
+───────────────────────────────────────────────────────────────── */
+
+.screen-d {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: var(--sp-6) var(--sp-8);
+  gap: var(--sp-6);
+  max-width: 1320px;
+  margin: 0 auto;
+  width: 100%;
+  animation: fadeInUp 0.5s var(--t-slow) both;
+}
+
+.screen-d__main {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-6);
+  flex: 1;
+}
+
+/* ── Live Savings Toolbar ── */
+.live-savings {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--sp-5) var(--sp-6);
+  background: linear-gradient(135deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.06) 100%);
+  border: 1px solid var(--border-medium);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+}
+
+.live-savings__info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-1);
+}
+
+.live-savings__title {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  background: var(--grad-brand);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.live-savings__desc {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+}
+
+.live-savings__counter {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background: rgba(0, 0, 0, 0.2);
+  padding: var(--sp-3) var(--sp-5);
+  border-radius: var(--r-md);
+  border: 1px solid var(--border-accent);
+  box-shadow: 0 0 20px rgba(0, 229, 160, 0.15);
+}
+
+.counter-label {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.counter-value {
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1;
+  text-shadow: 0 2px 10px rgba(0, 229, 160, 0.4);
+}
+
+/* ── Savings Progress Bar ── */
+.savings-progress {
+  height: 6px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: var(--r-full);
+  overflow: hidden;
+  margin-top: calc(-1 * var(--sp-4));
+}
+
+.savings-progress__fill {
+  height: 100%;
+  background: var(--grad-btn);
+  transition: width 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 0 10px rgba(0, 229, 160, 0.5);
+}
+
+/* ── Substitutions Grid ── */
+.substitutions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: var(--sp-5);
+  padding-bottom: var(--sp-8);
+}
+
+.empty-msg {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: var(--sp-8);
+  font-size: 1.1rem;
+  color: var(--text-muted);
+}
+
+/* ── Substitution Card ── */
+.sub-card {
+  display: flex;
+  flex-direction: column;
+  padding: var(--sp-5);
+  gap: var(--sp-4);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.sub-card--inactive {
+  opacity: 0.6;
+  filter: grayscale(0.8);
+  border-color: rgba(255,255,255,0.05);
+  transform: scale(0.98);
+}
+
+.sub-card--inactive:hover {
+  opacity: 0.8;
+  filter: grayscale(0.4);
+}
+
+.sub-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ── Custom Toggle Switch ── */
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 44px;
+  height: 24px;
+}
+
+.toggle-switch__input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggle-switch__slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(255,255,255,0.1);
+  transition: .3s;
+  border-radius: 24px;
+}
+
+.toggle-switch__slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: #7A8BA8;
+  transition: .3s;
+  border-radius: 50%;
+}
+
+.toggle-switch__input:checked + .toggle-switch__slider {
+  background-color: var(--primary-dim);
+  border: 1px solid var(--primary);
+}
+
+.toggle-switch__input:checked + .toggle-switch__slider:before {
+  transform: translateX(20px);
+  background-color: var(--primary);
+  box-shadow: 0 0 10px rgba(0,229,160,0.5);
+}
+
+/* ── Card Comparison Layout ── */
+.sub-card__comparison {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: var(--sp-3);
+  background: rgba(0,0,0,0.2);
+  padding: var(--sp-4);
+  border-radius: var(--r-md);
+  border: 1px solid rgba(255,255,255,0.03);
+}
+
+.item-details {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.item-details--imported {
+  text-align: right;
+}
+
+.item-label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  font-weight: 700;
+}
+
+.item-name {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  line-height: 1.3;
+}
+
+.sub-card--inactive .item-details--imported .item-name {
+  text-decoration: none;
+}
+.sub-card--active .item-details--imported .item-name {
+  text-decoration: line-through;
+  color: var(--text-secondary);
+}
+
+.item-price {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.comparison-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--bg-surface);
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  border: 1px solid var(--border-subtle);
+}
+
+/* ── Card Footer ── */
+.sub-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: var(--sp-3);
+  border-top: 1px solid var(--border-subtle);
+}
+
+.savings-label {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.savings-amount {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--primary);
+}
+
+.sub-card--inactive .savings-amount {
+  color: var(--text-muted);
+}
+
+/* ── CTA Footer ── */
+.screen-d__cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: var(--sp-3);
+  padding: var(--sp-4) 0;
+}
+
+.btn--large {
+  padding: 16px 48px;
+  font-size: 1.15rem;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .live-savings {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--sp-4);
+  }
+  .live-savings__counter {
+    width: 100%;
+    align-items: center;
+  }
+  .sub-card__comparison {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    text-align: center;
+  }
+  .item-details--imported {
+    text-align: center;
+  }
+  .comparison-arrow {
+    transform: rotate(90deg);
+    margin: 0 auto;
+  }
+}

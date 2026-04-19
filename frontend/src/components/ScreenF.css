@@ -1,0 +1,238 @@
+/* ─────────────────────────────────────────────────────────────────
+   ScreenF (Comparison) — Component-scoped styles
+───────────────────────────────────────────────────────────────── */
+
+.screen-f {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: var(--sp-6) var(--sp-8);
+  gap: var(--sp-6);
+  max-width: 1320px;
+  margin: 0 auto;
+  width: 100%;
+  animation: fadeInUp 0.5s var(--t-slow) both;
+}
+
+.screen-f__loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  gap: var(--sp-4);
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+}
+
+/* ── Hero ── */
+.screen-f__hero {
+  text-align: center;
+  margin: var(--sp-6) 0;
+}
+
+.screen-f__hero .hero-title {
+  background: var(--grad-btn);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ── Comparison Layout ── */
+.comparison-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--sp-6);
+  flex: 1;
+}
+
+@media (max-width: 860px) {
+  .comparison-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ── Basket Cards ── */
+.basket-card {
+  display: flex;
+  flex-direction: column;
+  padding: var(--sp-6);
+  gap: var(--sp-4);
+}
+
+.basket-card--original {
+  opacity: 0.8;
+  filter: grayscale(0.5);
+}
+
+.basket-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: var(--sp-4);
+  border-bottom: 2px solid var(--border-subtle);
+}
+
+.basket-card__header h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.basket-total {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--text-secondary);
+}
+
+.basket-total--success {
+  color: var(--primary);
+  text-shadow: 0 0 10px rgba(0,229,160,0.3);
+}
+
+/* ── Basket Lists ── */
+.basket-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-3);
+  max-height: 300px;
+  overflow-y: auto;
+  padding-right: var(--sp-2);
+}
+
+/* Nice scrollbar for the basket list */
+.basket-list::-webkit-scrollbar {
+  width: 6px;
+}
+.basket-list::-webkit-scrollbar-track {
+  background: rgba(255,255,255,0.05);
+  border-radius: 4px;
+}
+.basket-list::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.2);
+  border-radius: 4px;
+}
+
+.basket-item {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+  padding: var(--sp-2) 0;
+  border-bottom: 1px solid rgba(255,255,255,0.03);
+}
+
+.basket-item--faded {
+  opacity: 0.7;
+}
+
+.basket-item__indicator {
+  font-size: 0.9rem;
+}
+
+.basket-item__name {
+  flex: 1;
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.basket-item__price {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  font-family: monospace;
+}
+
+/* ── Extras Section ── */
+.extras-section {
+  margin-top: var(--sp-4);
+  padding: var(--sp-4);
+  background: linear-gradient(135deg, rgba(0, 229, 160, 0.05) 0%, rgba(0, 229, 160, 0.15) 100%);
+  border-radius: var(--r-md);
+  border: 1px solid var(--border-accent);
+}
+
+.extras-section__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--sp-3);
+}
+
+.extras-section__header h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.extras-surplus {
+  font-size: 0.85rem;
+  font-weight: 700;
+  background: var(--text-primary);
+  color: #000;
+  padding: 2px 8px;
+  border-radius: var(--r-full);
+}
+
+.extras-options {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+}
+
+.extra-option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--sp-2) var(--sp-3);
+  background: rgba(0,0,0,0.3);
+  border-radius: var(--r-sm);
+  transition: transform var(--t-fast);
+}
+
+.extra-option:hover {
+  transform: translateX(4px);
+}
+
+.extra-option__info {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+}
+
+.extra-emoji {
+  font-size: 1.2rem;
+}
+
+.extra-text {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+}
+
+.extra-qty {
+  font-weight: 800;
+  color: var(--primary);
+  font-size: 0.9rem;
+}
+
+.extra-name {
+  font-size: 0.9rem;
+  color: var(--text-primary);
+}
+
+.extra-total {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  font-family: monospace;
+}
+
+/* ── CTA Footer ── */
+.screen-f__cta {
+  display: flex;
+  justify-content: center;
+  margin-top: var(--sp-4);
+  padding-bottom: var(--sp-8);
+}

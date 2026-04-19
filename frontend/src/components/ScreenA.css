@@ -1,0 +1,430 @@
+/* ─────────────────────────────────────────────────────────────────
+   ScreenA — Component-scoped styles
+───────────────────────────────────────────────────────────────── */
+
+/* ── Layout ── */
+.screen-a {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: var(--sp-6) var(--sp-8);
+  gap: var(--sp-8);
+  max-width: 1320px;
+  margin: 0 auto;
+  width: 100%;
+  animation: fadeInUp 0.5s var(--t-slow) both;
+}
+
+/* ── Header ── */
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--sp-4);
+}
+
+.app-header__brand {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+}
+
+.brand-icon {
+  font-size: 2rem;
+  filter: drop-shadow(0 0 12px rgba(0, 229, 160, 0.4));
+  animation: floatDot 4s ease-in-out infinite;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.brand-name {
+  font-size: 1.4rem;
+  font-weight: 800;
+  background: var(--grad-brand);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.brand-tagline {
+  font-size: 0.76rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* ── Step Indicator ── */
+.step-indicator {
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+  position: relative;
+}
+
+.step__dot {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid var(--border-medium);
+  background: var(--bg-surface);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  transition: all var(--t-normal);
+  flex-shrink: 0;
+}
+
+.step--active .step__dot {
+  border-color: var(--primary);
+  background: var(--primary-dim);
+  color: var(--primary);
+  box-shadow: 0 0 16px rgba(0, 229, 160, 0.25);
+}
+
+.step--done .step__dot {
+  border-color: var(--primary);
+  background: var(--primary);
+  color: #000;
+}
+
+.step__label {
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.step--active .step__label {
+  color: var(--text-primary);
+}
+
+.step__line {
+  width: 40px;
+  height: 2px;
+  background: var(--border-subtle);
+  margin: 0 var(--sp-2);
+  flex-shrink: 0;
+}
+
+/* ── Hero ── */
+.screen-a__hero {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--sp-3);
+  animation: fadeInUp 0.5s 0.1s var(--t-slow) both;
+}
+
+.hero-title {
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+  line-height: 1.1;
+}
+
+.hero-title--accent {
+  background: var(--grad-brand);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-sub {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  max-width: 580px;
+  line-height: 1.7;
+}
+
+.hero-sub strong {
+  color: var(--text-primary);
+}
+
+/* ── Two-column layout ── */
+.screen-a__columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--sp-6);
+  flex: 1;
+  animation: fadeInUp 0.5s 0.18s var(--t-slow) both;
+}
+
+@media (max-width: 860px) {
+  .screen-a__columns {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ── Glass Panel base ── */
+.panel {
+  padding: var(--sp-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-5);
+}
+
+.panel__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-3);
+}
+
+.panel__header-left {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+}
+
+.panel__icon {
+  font-size: 1.3rem;
+}
+
+.panel__title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+/* ── Receipt Textarea ── */
+.receipt-textarea {
+  flex: 1;
+  min-height: 280px;
+  background: var(--bg-input);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--r-md);
+  color: var(--text-primary);
+  font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+  font-size: 0.84rem;
+  line-height: 1.8;
+  padding: var(--sp-4);
+  resize: vertical;
+  outline: none;
+  transition: border-color var(--t-normal), box-shadow var(--t-normal);
+}
+
+.receipt-textarea:focus {
+  border-color: var(--border-accent);
+  box-shadow: 0 0 0 3px rgba(0, 229, 160, 0.10);
+}
+
+.receipt-textarea::placeholder {
+  color: var(--text-muted);
+  font-family: var(--font);
+  font-size: 0.83rem;
+  line-height: 1.7;
+}
+
+/* ── Action Buttons Row ── */
+.panel__actions {
+  display: flex;
+  gap: var(--sp-3);
+  flex-wrap: wrap;
+}
+
+.panel__actions .btn {
+  flex: 1;
+}
+
+/* ── Spinner dark variant (for secondary button) ── */
+.spinner--dark {
+  border-color: rgba(255,255,255,0.2);
+  border-top-color: var(--text-primary);
+}
+
+/* ── Results Panel ── */
+.panel--results {
+  min-height: 400px;
+}
+
+.panel--has-results {
+  border-color: rgba(0, 229, 160, 0.15);
+}
+
+.results-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-5);
+  animation: scaleIn 0.5s var(--t-slow) both;
+}
+
+/* ── Empty State ── */
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  gap: var(--sp-4);
+  text-align: center;
+  padding: var(--sp-8);
+}
+
+.empty-state__icon {
+  animation: pulse 3s ease-in-out infinite;
+}
+
+.empty-state__title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.empty-state__sub {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  max-width: 280px;
+  line-height: 1.6;
+}
+
+.empty-state__sub strong {
+  color: var(--text-secondary);
+}
+
+/* ── Donut Chart ── */
+.donut-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.donut-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.1;
+}
+
+.donut-center__value {
+  font-size: 2.2rem;
+  font-weight: 800;
+  background: var(--grad-brand);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.donut-center__label {
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* ── Chart Tooltip ── */
+.chart-tooltip {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+  padding: var(--sp-2) var(--sp-3);
+  background: var(--bg-surface);
+  border: 1px solid var(--border-medium);
+  border-radius: var(--r-md);
+  box-shadow: var(--shadow-md);
+  font-size: 0.88rem;
+}
+
+.chart-tooltip__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.chart-tooltip__name {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.chart-tooltip__value {
+  color: var(--text-secondary);
+}
+
+/* ── Category Legend ── */
+.legend {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--sp-2) var(--sp-4);
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+  padding: 6px var(--sp-3);
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--r-md);
+  transition: border-color var(--t-fast), background var(--t-fast);
+}
+
+.legend-item:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--border-medium);
+}
+
+.legend-item__dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.legend-item__name {
+  font-size: 0.83rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  flex: 1;
+}
+
+.legend-item__count {
+  font-size: 0.83rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  background: var(--bg-surface);
+  border-radius: var(--r-full);
+  padding: 1px 8px;
+}
+
+/* ── Bottom CTA ── */
+.screen-a__cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: var(--sp-3);
+  padding: var(--sp-8) var(--sp-4);
+  animation: fadeInUp 0.4s var(--t-slow) both;
+}
+
+.cta-hint {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.cta-hint strong {
+  color: var(--primary);
+}

@@ -1,0 +1,272 @@
+[
+  {
+    "id": 1,
+    "category": "Dairy",
+    "imported_name": "Lurpak Butter 200g",
+    "imported_price": 680,
+    "local_name": "Nurpur Butter 200g",
+    "local_price": 320,
+    "savings": 360
+  },
+  {
+    "id": 2,
+    "category": "Dairy",
+    "imported_name": "President Brie Cheese 125g",
+    "imported_price": 1200,
+    "local_name": "Adam's Cheese Slices 200g",
+    "local_price": 280,
+    "savings": 920
+  },
+  {
+    "id": 3,
+    "category": "Dairy",
+    "imported_name": "Anchor Full Cream Milk 1L",
+    "imported_price": 380,
+    "local_name": "Olper's Full Cream Milk 1L",
+    "local_price": 180,
+    "savings": 200
+  },
+  {
+    "id": 4,
+    "category": "Dairy",
+    "imported_name": "Danone Natural Yogurt 400g",
+    "imported_price": 350,
+    "local_name": "Tarang Natural Yogurt 400g",
+    "local_price": 120,
+    "savings": 230
+  },
+  {
+    "id": 5,
+    "category": "Dairy",
+    "imported_name": "Philadelphia Cream Cheese 200g",
+    "imported_price": 950,
+    "local_name": "Dairy Queen Cream Cheese 200g",
+    "local_price": 280,
+    "savings": 670
+  },
+  {
+    "id": 6,
+    "category": "Produce",
+    "imported_name": "Kiwi Fruit (New Zealand) x4",
+    "imported_price": 480,
+    "local_name": "Amrood Guava (Local) x4",
+    "local_price": 60,
+    "savings": 420
+  },
+  {
+    "id": 7,
+    "category": "Produce",
+    "imported_name": "Braeburn Apple (Imported) 1kg",
+    "imported_price": 450,
+    "local_name": "Kashmiri Apple 1kg",
+    "local_price": 180,
+    "savings": 270
+  },
+  {
+    "id": 8,
+    "category": "Produce",
+    "imported_name": "Avocado (Imported) per piece",
+    "imported_price": 350,
+    "local_name": "Banana (Local) per bunch",
+    "local_price": 80,
+    "savings": 270
+  },
+  {
+    "id": 9,
+    "category": "Produce",
+    "imported_name": "Baby Spinach (Imported pack) 200g",
+    "imported_price": 280,
+    "local_name": "Palak (Local Fresh) 500g",
+    "local_price": 60,
+    "savings": 220
+  },
+  {
+    "id": 10,
+    "category": "Produce",
+    "imported_name": "Cherry Tomatoes (Imported) 250g",
+    "imported_price": 320,
+    "local_name": "Desi Tamatar 1kg",
+    "local_price": 80,
+    "savings": 240
+  },
+  {
+    "id": 11,
+    "category": "Grains",
+    "imported_name": "Quaker Oats 500g",
+    "imported_price": 480,
+    "local_name": "National Oats 500g",
+    "local_price": 180,
+    "savings": 300
+  },
+  {
+    "id": 12,
+    "category": "Grains",
+    "imported_name": "Barilla Pasta Spaghetti 500g",
+    "imported_price": 650,
+    "local_name": "Kolson Pasta 500g",
+    "local_price": 160,
+    "savings": 490
+  },
+  {
+    "id": 13,
+    "category": "Grains",
+    "imported_name": "Uncle Ben's Basmati Rice 1kg",
+    "imported_price": 780,
+    "local_name": "Guard Basmati Rice 1kg",
+    "local_price": 220,
+    "savings": 560
+  },
+  {
+    "id": 14,
+    "category": "Grains",
+    "imported_name": "Kellogg's Corn Flakes 500g",
+    "imported_price": 680,
+    "local_name": "Nayab Corn Flakes 500g",
+    "local_price": 180,
+    "savings": 500
+  },
+  {
+    "id": 15,
+    "category": "Grains",
+    "imported_name": "Bob's Red Mill Whole Wheat Flour 1kg",
+    "imported_price": 580,
+    "local_name": "Sunridge Whole Wheat Flour 1kg",
+    "local_price": 120,
+    "savings": 460
+  },
+  {
+    "id": 16,
+    "category": "Protein",
+    "imported_name": "John West Tuna in Brine 185g",
+    "imported_price": 420,
+    "local_name": "Young's Tuna in Brine 185g",
+    "local_price": 180,
+    "savings": 240
+  },
+  {
+    "id": 17,
+    "category": "Protein",
+    "imported_name": "Spam Luncheon Meat 340g",
+    "imported_price": 680,
+    "local_name": "K&N's Chicken Luncheon 340g",
+    "local_price": 280,
+    "savings": 400
+  },
+  {
+    "id": 18,
+    "category": "Protein",
+    "imported_name": "Tyson Chicken Nuggets 500g",
+    "imported_price": 850,
+    "local_name": "K&N's Chicken Nuggets 500g",
+    "local_price": 380,
+    "savings": 470
+  },
+  {
+    "id": 19,
+    "category": "Protein",
+    "imported_name": "Skippy Peanut Butter 500g",
+    "imported_price": 920,
+    "local_name": "Taim Peanut Butter 500g",
+    "local_price": 380,
+    "savings": 540
+  },
+  {
+    "id": 20,
+    "category": "Protein",
+    "imported_name": "Heinz Baked Beans 415g",
+    "imported_price": 480,
+    "local_name": "Mitchell's Baked Beans 415g",
+    "local_price": 180,
+    "savings": 300
+  },
+  {
+    "id": 21,
+    "category": "Snacks",
+    "imported_name": "Pringles Original 165g",
+    "imported_price": 680,
+    "local_name": "Lays Classic Salted 150g",
+    "local_price": 90,
+    "savings": 590
+  },
+  {
+    "id": 22,
+    "category": "Snacks",
+    "imported_name": "Kit Kat 4-Finger Chocolate",
+    "imported_price": 280,
+    "local_name": "Hilal Choco Bar",
+    "local_price": 80,
+    "savings": 200
+  },
+  {
+    "id": 23,
+    "category": "Snacks",
+    "imported_name": "Nutella Hazelnut Spread 400g",
+    "imported_price": 1200,
+    "local_name": "Banjo Chocolate Spread 400g",
+    "local_price": 350,
+    "savings": 850
+  },
+  {
+    "id": 24,
+    "category": "Snacks",
+    "imported_name": "Ritz Original Crackers 200g",
+    "imported_price": 380,
+    "local_name": "English Biscuits Cracker 200g",
+    "local_price": 120,
+    "savings": 260
+  },
+  {
+    "id": 25,
+    "category": "Snacks",
+    "imported_name": "Oreo Original Cookies 154g",
+    "imported_price": 320,
+    "local_name": "Bisconni Candi Biscuits 180g",
+    "local_price": 80,
+    "savings": 240
+  },
+  {
+    "id": 26,
+    "category": "Beverages",
+    "imported_name": "Tropicana Orange Juice 1L",
+    "imported_price": 580,
+    "local_name": "Shezan Orange Drink 1L",
+    "local_price": 160,
+    "savings": 420
+  },
+  {
+    "id": 27,
+    "category": "Beverages",
+    "imported_name": "Nestle Pure Life Water 1.5L",
+    "imported_price": 120,
+    "local_name": "Aquafina Drinking Water 1.5L",
+    "local_price": 70,
+    "savings": 50
+  },
+  {
+    "id": 28,
+    "category": "Beverages",
+    "imported_name": "Lipton Yellow Label Tea 100g",
+    "imported_price": 680,
+    "local_name": "Tapal Danedar Tea 100g",
+    "local_price": 280,
+    "savings": 400
+  },
+  {
+    "id": 29,
+    "category": "Beverages",
+    "imported_name": "Nescafe Classic Coffee 100g",
+    "imported_price": 1200,
+    "local_name": "Hania Coffee Classic 100g",
+    "local_price": 380,
+    "savings": 820
+  },
+  {
+    "id": 30,
+    "category": "Beverages",
+    "imported_name": "Red Bull Energy Drink 250ml",
+    "imported_price": 280,
+    "local_name": "Sting Energy Drink 250ml",
+    "local_price": 80,
+    "savings": 200
+  }
+]
