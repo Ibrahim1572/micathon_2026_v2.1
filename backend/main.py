@@ -4,6 +4,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from routes.parse import router as parse_router
 from routes.substitutions import router as substitutions_router
 from routes.surplus import router as surplus_router
+from routes.upload import router as upload_router
 
 # ---------------------------------------------------------------------------
 # Application setup
@@ -32,6 +33,7 @@ app.add_middleware(
 app.include_router(parse_router, prefix="/api", tags=["Parse"])
 app.include_router(substitutions_router, prefix="/api", tags=["Substitutions"])
 app.include_router(surplus_router, prefix="/api", tags=["Surplus"])
+app.include_router(upload_router, prefix="/api", tags=["Upload"])
 
 
 # ---------------------------------------------------------------------------
@@ -49,11 +51,12 @@ def root():
 @app.get("/api/sample", tags=["Sample"])
 def get_sample_receipt():
     sample = (
-        "
+        
         "Tropicana Orange Juice 1L........Rs. 580\n"
         "Lipton Yellow Label Tea 100g.....Rs. 680\n"
         "Nescafe Classic Coffee 100g......Rs. 1200\n"
-        "Red Bull Energy Drink 250ml......Rs. 280"Lurpak Butter 200g...............Rs. 680\n"
+        "Red Bull Energy Drink 250ml......Rs. 280\n"
+        "Lurpak Butter 200g...............Rs. 680\n"
         "Anchor Full Cream Milk 1L........Rs. 380\n"
         "President Brie Cheese 125g.......Rs. 1200\n"
         "Danone Natural Yogurt 400g.......Rs. 350\n"

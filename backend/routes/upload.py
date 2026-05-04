@@ -9,7 +9,7 @@ load_dotenv()
 
 router = APIRouter()
 
-api_key = os.getenv("API_KEY")
+api_key = os.getenv("api_key")
 
 @router.post("/upload", tags=["Upload"])
 async def upload_receipt(image: UploadFile = File(...)):

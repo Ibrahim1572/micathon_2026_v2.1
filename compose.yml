@@ -1,0 +1,14 @@
+services: 
+  backend:
+    build: 
+      context: .
+      dockerfile: Dockerfile.back
+    ports: 
+      - '8000:8000'
+  frontend:
+    build: 
+      context: .
+      dockerfile: Dockerfile.front
+    ports: 
+      - '5173:5173'
+

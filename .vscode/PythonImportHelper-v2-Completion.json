@@ -1,0 +1,471 @@
+[
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "re",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "re",
+        "description": "re",
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "File",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "UploadFile",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "ParseRequest",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "ParseResponse",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "SubstitutionItem",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "SubstitutionsRequest",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "SubstitutionsResponse",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "SurplusRequest",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "SurplusResponse",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "io",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "io",
+        "description": "io",
+        "detail": "io",
+        "documentation": {}
+    },
+    {
+        "label": "Image",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "genai",
+        "importPath": "google",
+        "description": "google",
+        "isExtraImport": true,
+        "detail": "google",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "CORSMiddleware",
+        "importPath": "fastapi.middleware.cors",
+        "description": "fastapi.middleware.cors",
+        "isExtraImport": true,
+        "detail": "fastapi.middleware.cors",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "importPath": "routes.parse",
+        "description": "routes.parse",
+        "isExtraImport": true,
+        "detail": "routes.parse",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "importPath": "routes.substitutions",
+        "description": "routes.substitutions",
+        "isExtraImport": true,
+        "detail": "routes.substitutions",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "importPath": "routes.surplus",
+        "description": "routes.surplus",
+        "isExtraImport": true,
+        "detail": "routes.surplus",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "importPath": "routes.upload",
+        "description": "routes.upload",
+        "isExtraImport": true,
+        "detail": "routes.upload",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "parse_receipt",
+        "kind": 2,
+        "importPath": "backend.routes.parse",
+        "description": "backend.routes.parse",
+        "peekOfCode": "def parse_receipt(request: ParseRequest):\n    \"\"\"\n    Parse raw receipt text into categorized item lists.\n    Input : { \"receipt_text\": \"<multi-line receipt string>\" }\n    Output: { \"categories\": { \"Dairy\": [...], \"Grains\": [...], ... } }\n    \"\"\"\n    lines = request.receipt_text.strip().split(\"\\n\")\n    categories = {}\n    seen = set()\n    for line in lines:",
+        "detail": "backend.routes.parse",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "backend.routes.parse",
+        "description": "backend.routes.parse",
+        "peekOfCode": "router = APIRouter()\n# ---------------------------------------------------------------------------\n# Load substitutions.json ONCE at startup to avoid repeated disk I/O.\n# This is the only in-memory cache — intentional for hardware constraints.\n# ---------------------------------------------------------------------------\n_DATA_PATH = os.path.join(os.path.dirname(os.path.dirname(__file__)), \"substitutions.json\")\nwith open(_DATA_PATH, \"r\", encoding=\"utf-8\") as _f:\n    _SUBSTITUTIONS_DB = json.load(_f)\n# Category keyword map built from the static data file (no hard-coding needed)\n_CATEGORY_KEYWORDS = {",
+        "detail": "backend.routes.parse",
+        "documentation": {}
+    },
+    {
+        "label": "_DATA_PATH",
+        "kind": 5,
+        "importPath": "backend.routes.parse",
+        "description": "backend.routes.parse",
+        "peekOfCode": "_DATA_PATH = os.path.join(os.path.dirname(os.path.dirname(__file__)), \"substitutions.json\")\nwith open(_DATA_PATH, \"r\", encoding=\"utf-8\") as _f:\n    _SUBSTITUTIONS_DB = json.load(_f)\n# Category keyword map built from the static data file (no hard-coding needed)\n_CATEGORY_KEYWORDS = {\n    \"Dairy\": [\n        \"milk\", \"butter\", \"cheese\", \"yogurt\", \"cream\", \"ghee\", \"brie\",\n        \"anchor\", \"lurpak\", \"olper\", \"nurpur\", \"danone\", \"tarang\",\n        \"philadelphia\", \"dairy queen\", \"adam\"\n    ],",
+        "detail": "backend.routes.parse",
+        "documentation": {}
+    },
+    {
+        "label": "_CATEGORY_KEYWORDS",
+        "kind": 5,
+        "importPath": "backend.routes.parse",
+        "description": "backend.routes.parse",
+        "peekOfCode": "_CATEGORY_KEYWORDS = {\n    \"Dairy\": [\n        \"milk\", \"butter\", \"cheese\", \"yogurt\", \"cream\", \"ghee\", \"brie\",\n        \"anchor\", \"lurpak\", \"olper\", \"nurpur\", \"danone\", \"tarang\",\n        \"philadelphia\", \"dairy queen\", \"adam\"\n    ],\n    \"Produce\": [\n        \"apple\", \"banana\", \"kiwi\", \"tomato\", \"spinach\", \"avocado\",\n        \"guava\", \"palak\", \"tamatar\", \"cherry\", \"amrood\", \"braeburn\",\n        \"kashmiri\", \"fruit\", \"vegetable\"",
+        "detail": "backend.routes.parse",
+        "documentation": {}
+    },
+    {
+        "label": "get_substitutions",
+        "kind": 2,
+        "importPath": "backend.routes.substitutions",
+        "description": "backend.routes.substitutions",
+        "peekOfCode": "def get_substitutions(request: SubstitutionsRequest):\n    \"\"\"\n    Match a list of parsed item names against substitutions.json.\n    Input : { \"items\": [\"Lurpak Butter 200g\", \"Barilla Pasta 500g\", ...] }\n    Output: { \"substitutions\": [{ id, category, imported_name, imported_price,\n                                   local_name, local_price, savings }, ...] }\n    \"\"\"\n    matched = []\n    seen_ids = set()\n    for item_name in request.items:",
+        "detail": "backend.routes.substitutions",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "backend.routes.substitutions",
+        "description": "backend.routes.substitutions",
+        "peekOfCode": "router = APIRouter()\n# ---------------------------------------------------------------------------\n# Load substitutions.json ONCE at startup — shared in-memory reference.\n# ---------------------------------------------------------------------------\n_DATA_PATH = os.path.join(os.path.dirname(os.path.dirname(__file__)), \"substitutions.json\")\nwith open(_DATA_PATH, \"r\", encoding=\"utf-8\") as _f:\n    _SUBSTITUTIONS_DB = json.load(_f)\ndef _word_set(text):\n    \"\"\"\n    Return a set of significant lowercase words (length > 3) from a string.",
+        "detail": "backend.routes.substitutions",
+        "documentation": {}
+    },
+    {
+        "label": "_DATA_PATH",
+        "kind": 5,
+        "importPath": "backend.routes.substitutions",
+        "description": "backend.routes.substitutions",
+        "peekOfCode": "_DATA_PATH = os.path.join(os.path.dirname(os.path.dirname(__file__)), \"substitutions.json\")\nwith open(_DATA_PATH, \"r\", encoding=\"utf-8\") as _f:\n    _SUBSTITUTIONS_DB = json.load(_f)\ndef _word_set(text):\n    \"\"\"\n    Return a set of significant lowercase words (length > 3) from a string.\n    Short words ('in', 'the', 'per') are ignored to reduce false-positive matches.\n    \"\"\"\n    return {w for w in text.lower().split() if len(w) > 3}\ndef _matches(item_name, substitution):",
+        "detail": "backend.routes.substitutions",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_surplus",
+        "kind": 2,
+        "importPath": "backend.routes.surplus",
+        "description": "backend.routes.surplus",
+        "peekOfCode": "def calculate_surplus(request: SurplusRequest):\n    \"\"\"\n    Compute original basket total, new basket total, and the savings surplus.\n    Input : { \"accepted_substitutions\": [{ SubstitutionItem }, ...] }\n    Output: { \"original_total\": 5920.0, \"new_total\": 2030.0, \"surplus\": 3890.0 }\n    Invariant guaranteed: original_total - new_total == surplus (to 2 decimal places)\n    \"\"\"\n    original_total = sum(item.imported_price for item in request.accepted_substitutions)\n    new_total = sum(item.local_price for item in request.accepted_substitutions)\n    surplus = original_total - new_total",
+        "detail": "backend.routes.surplus",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "backend.routes.surplus",
+        "description": "backend.routes.surplus",
+        "peekOfCode": "router = APIRouter()\n@router.post(\"/surplus\", response_model=SurplusResponse)\ndef calculate_surplus(request: SurplusRequest):\n    \"\"\"\n    Compute original basket total, new basket total, and the savings surplus.\n    Input : { \"accepted_substitutions\": [{ SubstitutionItem }, ...] }\n    Output: { \"original_total\": 5920.0, \"new_total\": 2030.0, \"surplus\": 3890.0 }\n    Invariant guaranteed: original_total - new_total == surplus (to 2 decimal places)\n    \"\"\"\n    original_total = sum(item.imported_price for item in request.accepted_substitutions)",
+        "detail": "backend.routes.surplus",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "backend.routes.upload",
+        "description": "backend.routes.upload",
+        "peekOfCode": "router = APIRouter()\napi_key = os.getenv(\"api_key\")\n@router.post(\"/upload\", tags=[\"Upload\"])\nasync def upload_receipt(image: UploadFile = File(...)):\n    if not api_key:\n        raise HTTPException(status_code=500, detail=\"Gemini API key not configured\")\n    try:\n        # Read image bytes\n        contents = await image.read()\n        pil_image = Image.open(io.BytesIO(contents))",
+        "detail": "backend.routes.upload",
+        "documentation": {}
+    },
+    {
+        "label": "api_key",
+        "kind": 5,
+        "importPath": "backend.routes.upload",
+        "description": "backend.routes.upload",
+        "peekOfCode": "api_key = os.getenv(\"api_key\")\n@router.post(\"/upload\", tags=[\"Upload\"])\nasync def upload_receipt(image: UploadFile = File(...)):\n    if not api_key:\n        raise HTTPException(status_code=500, detail=\"Gemini API key not configured\")\n    try:\n        # Read image bytes\n        contents = await image.read()\n        pil_image = Image.open(io.BytesIO(contents))\n        client = genai.Client(api_key=api_key)",
+        "detail": "backend.routes.upload",
+        "documentation": {}
+    },
+    {
+        "label": "root",
+        "kind": 2,
+        "importPath": "backend.main",
+        "description": "backend.main",
+        "peekOfCode": "def root():\n    return {\"status\": \"Smart Saver API is running\", \"version\": \"1.0.0\"}\n# ---------------------------------------------------------------------------\n# Sample receipt endpoint — used by Screen A \"Load Sample\" button in Phase 2.\n# Returns a realistic Naheed-style receipt covering all 6 categories.\n# ---------------------------------------------------------------------------\n@app.get(\"/api/sample\", tags=[\"Sample\"])\ndef get_sample_receipt():\n    sample = (\n        \"Tropicana Orange Juice 1L........Rs. 580\\n\"",
+        "detail": "backend.main",
+        "documentation": {}
+    },
+    {
+        "label": "get_sample_receipt",
+        "kind": 2,
+        "importPath": "backend.main",
+        "description": "backend.main",
+        "peekOfCode": "def get_sample_receipt():\n    sample = (\n        \"Tropicana Orange Juice 1L........Rs. 580\\n\"\n        \"Lipton Yellow Label Tea 100g.....Rs. 680\\n\"\n        \"Nescafe Classic Coffee 100g......Rs. 1200\\n\"\n        \"Red Bull Energy Drink 250ml......Rs. 280\\n\"\n        \"Lurpak Butter 200g...............Rs. 680\\n\"\n        \"Anchor Full Cream Milk 1L........Rs. 380\\n\"\n        \"President Brie Cheese 125g.......Rs. 1200\\n\"\n        \"Danone Natural Yogurt 400g.......Rs. 350\\n\"",
+        "detail": "backend.main",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "backend.main",
+        "description": "backend.main",
+        "peekOfCode": "app = FastAPI(\n    title=\"Smart Saver API\",\n    description=\"Imported vs. Local grocery substitution engine.\",\n    version=\"1.0.0\",\n)\n# ---------------------------------------------------------------------------\n# CORS — allow only the Vite dev origin to match hardcoded frontend config.\n# Per error protocol: if CORS errors appear, verify these exact origins.\n# ---------------------------------------------------------------------------\napp.add_middleware(",
+        "detail": "backend.main",
+        "documentation": {}
+    },
+    {
+        "label": "ParseRequest",
+        "kind": 6,
+        "importPath": "backend.models",
+        "description": "backend.models",
+        "peekOfCode": "class ParseRequest(BaseModel):\n    receipt_text: str\nclass ParseResponse(BaseModel):\n    categories: Dict[str, List[str]]\nclass SubstitutionsRequest(BaseModel):\n    items: List[str]\nclass SubstitutionItem(BaseModel):\n    id: int\n    category: str\n    imported_name: str",
+        "detail": "backend.models",
+        "documentation": {}
+    },
+    {
+        "label": "ParseResponse",
+        "kind": 6,
+        "importPath": "backend.models",
+        "description": "backend.models",
+        "peekOfCode": "class ParseResponse(BaseModel):\n    categories: Dict[str, List[str]]\nclass SubstitutionsRequest(BaseModel):\n    items: List[str]\nclass SubstitutionItem(BaseModel):\n    id: int\n    category: str\n    imported_name: str\n    imported_price: float\n    local_name: str",
+        "detail": "backend.models",
+        "documentation": {}
+    },
+    {
+        "label": "SubstitutionsRequest",
+        "kind": 6,
+        "importPath": "backend.models",
+        "description": "backend.models",
+        "peekOfCode": "class SubstitutionsRequest(BaseModel):\n    items: List[str]\nclass SubstitutionItem(BaseModel):\n    id: int\n    category: str\n    imported_name: str\n    imported_price: float\n    local_name: str\n    local_price: float\n    savings: float",
+        "detail": "backend.models",
+        "documentation": {}
+    },
+    {
+        "label": "SubstitutionItem",
+        "kind": 6,
+        "importPath": "backend.models",
+        "description": "backend.models",
+        "peekOfCode": "class SubstitutionItem(BaseModel):\n    id: int\n    category: str\n    imported_name: str\n    imported_price: float\n    local_name: str\n    local_price: float\n    savings: float\nclass SubstitutionsResponse(BaseModel):\n    substitutions: List[SubstitutionItem]",
+        "detail": "backend.models",
+        "documentation": {}
+    },
+    {
+        "label": "SubstitutionsResponse",
+        "kind": 6,
+        "importPath": "backend.models",
+        "description": "backend.models",
+        "peekOfCode": "class SubstitutionsResponse(BaseModel):\n    substitutions: List[SubstitutionItem]\nclass SurplusRequest(BaseModel):\n    accepted_substitutions: List[SubstitutionItem]\nclass SurplusResponse(BaseModel):\n    original_total: float\n    new_total: float\n    surplus: float",
+        "detail": "backend.models",
+        "documentation": {}
+    },
+    {
+        "label": "SurplusRequest",
+        "kind": 6,
+        "importPath": "backend.models",
+        "description": "backend.models",
+        "peekOfCode": "class SurplusRequest(BaseModel):\n    accepted_substitutions: List[SubstitutionItem]\nclass SurplusResponse(BaseModel):\n    original_total: float\n    new_total: float\n    surplus: float",
+        "detail": "backend.models",
+        "documentation": {}
+    },
+    {
+        "label": "SurplusResponse",
+        "kind": 6,
+        "importPath": "backend.models",
+        "description": "backend.models",
+        "peekOfCode": "class SurplusResponse(BaseModel):\n    original_total: float\n    new_total: float\n    surplus: float",
+        "detail": "backend.models",
+        "documentation": {}
+    },
+    {
+        "label": "_Known",
+        "kind": 6,
+        "importPath": "frontend.node_modules.flatted.python.flatted",
+        "description": "frontend.node_modules.flatted.python.flatted",
+        "peekOfCode": "class _Known:\n    def __init__(self):\n        self.key = []\n        self.value = []\nclass _String:\n    def __init__(self, value):\n        self.value = value\ndef _array_keys(value):\n    for i in range(len(value)):\n        yield i",
+        "detail": "frontend.node_modules.flatted.python.flatted",
+        "documentation": {}
+    },
+    {
+        "label": "_String",
+        "kind": 6,
+        "importPath": "frontend.node_modules.flatted.python.flatted",
+        "description": "frontend.node_modules.flatted.python.flatted",
+        "peekOfCode": "class _String:\n    def __init__(self, value):\n        self.value = value\ndef _array_keys(value):\n    for i in range(len(value)):\n        yield i\ndef _object_keys(value):\n    for key in value:\n        yield key\ndef _is_array(value):",
+        "detail": "frontend.node_modules.flatted.python.flatted",
+        "documentation": {}
+    },
+    {
+        "label": "parse",
+        "kind": 2,
+        "importPath": "frontend.node_modules.flatted.python.flatted",
+        "description": "frontend.node_modules.flatted.python.flatted",
+        "peekOfCode": "def parse(value, *args, **kwargs):\n    json = _json.loads(value, *args, **kwargs)\n    wrapped = []\n    for value in json:\n        wrapped.append(_wrap(value))\n    input = []\n    for value in wrapped:\n        if isinstance(value, _String):\n            input.append(value.value)\n        else:",
+        "detail": "frontend.node_modules.flatted.python.flatted",
+        "documentation": {}
+    },
+    {
+        "label": "stringify",
+        "kind": 2,
+        "importPath": "frontend.node_modules.flatted.python.flatted",
+        "description": "frontend.node_modules.flatted.python.flatted",
+        "peekOfCode": "def stringify(value, *args, **kwargs):\n    known = _Known()\n    input = []\n    output = []\n    i = int(_index(known, input, value))\n    while i < len(input):\n        output.append(_transform(known, input, input[i]))\n        i += 1\n    return _json.dumps(output, *args, **kwargs)",
+        "detail": "frontend.node_modules.flatted.python.flatted",
+        "documentation": {}
+    }
+]
