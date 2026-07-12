@@ -2,6 +2,7 @@ from pydantic import BaseModel
 from typing import Dict, List
 
 
+
 class ParseRequest(BaseModel):
     receipt_text: str
 
