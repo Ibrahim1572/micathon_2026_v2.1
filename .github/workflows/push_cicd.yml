@@ -17,5 +17,8 @@ jobs:
             - name: Install dependancies
               run: pip install -r backend/requirements.txt
 
+            - name: Changing directory to backend
+              run: cd backend
+
             - name: Run Backend
               run: uvicorn main:app & sleep 5
