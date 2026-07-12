@@ -21,4 +21,4 @@ jobs:
               run: cd backend
 
             - name: Run Backend
-              run: uvicorn main:app & sleep 5
+              run: uvicorn backend/main:app & sleep 5
