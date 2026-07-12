@@ -1,4 +1,4 @@
-name: Samrt Saver CI/CD Pipeline
+name: Smart Saver CI/CD Pipeline
 
 on:
     push:
