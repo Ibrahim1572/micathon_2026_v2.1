@@ -14,11 +14,11 @@ jobs:
         steps: 
             - uses: actions/checkout@v3
 
+            - name: Install dependancies
+              run: pip install -r backend/req.txt
+
             - name: Changing directory to backend
               run: cd backend
-
-            - name: Install dependancies
-              run: pip install -r req.txt
 
             - name: Run Backend
               run: uvicorn main:app & sleep 5
